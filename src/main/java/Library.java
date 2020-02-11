@@ -19,4 +19,12 @@ public class Library {
             this.books.add(book);
         }
     }
+
+    public boolean giveBook(Book book) {
+        if ( this.books.contains(book)){
+            this.books.remove(book);
+            return true;
+        }
+        return false;
+    }
 }
